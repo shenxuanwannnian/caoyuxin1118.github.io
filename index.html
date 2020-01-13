@@ -92,7 +92,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/24/曹宇新的y第一篇文章/" data-id="ck5bs8cb10001qosy4pabmn8v" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/24/曹宇新的y第一篇文章/" data-id="ck5bsk3t70000gosyb2q0ju31" class="article-share-link">Share</a>
       
       
     </footer>
@@ -112,36 +112,45 @@
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h2 id="通信"><a href="#通信" class="headerlink" title="通信"></a>通信</h2><hr>
+<p>三要素：实体，连通，协议。</p>
+<p>分类</p>
+<ol>
+<li>单工通信，双工通信（半双工，全双工）</li>
+<li>单播，多播，广播（可以通知到局域网内的所有主机），主播、</li>
+</ol>
+<h4 id="通信的规范格式就是协议："><a href="#通信的规范格式就是协议：" class="headerlink" title="通信的规范格式就是协议："></a>通信的规范格式就是协议：</h4><p>OSI：七层<br>TCP/IP:五层-&gt;四层：<br>应用层&lt;- ：SSH：22 、HTTP：80 、HTTPS：443 、FTP：21<br>传输层&lt;- ：TCP-UDP<br>网络层&lt;- ：IP<br>数据链路</p>
+<h5 id="传输层："><a href="#传输层：" class="headerlink" title="传输层："></a>传输层：</h5><p>TCP：安全可靠，相应的传输效率较低，建立了两条管道实现数据传输且实现了全双工。</p>
+<ol>
+<li><p>三次握手（建立连接）：客户端发出请求，服务端回应，客户端确认；</p>
+</li>
+<li><p>四次挥手（断开连接）：（1）客户端发送结束请求，关闭由客户端到服务器的数据传输（但是还接受服务器向客户端发送的数据）；<br>（2）服务器收到确认请求，发送确认收到请求消息；<br>（3）服务器确认数据传输完成，向客户端发送完成的响应；<br>（4）客户端收到关闭连接响应，再发送确认。服务器没有收到消息客户端重传。服务器收到确认之后即断开连接，客户端等待后没有收到恢复，也断开连接。</p>
+<p>UDP：特点相反，非面向连接，但也建立了全双工。在传输的过程中不会保证传输数据的顺序与完整性。应用场景：视频聊天。</p>
+<h5 id="应用层："><a href="#应用层：" class="headerlink" title="应用层："></a>应用层：</h5><p>HTTP:（底层协议HTTP为全双工，但是只可以实现半双工，因为需要根据请求进行响应）</p>
+<h6 id="请求："><a href="#请求：" class="headerlink" title="请求："></a>请求：</h6><ol>
+<li>请求行：</li>
+<li>请求头：</li>
+<li>空行：</li>
+<li>请求体：</li>
+</ol>
+</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GET /a.html HTTP/<span class="number">1.1</span></span><br><span class="line">content-type:application/json</span><br><span class="line">cokkie:uid=<span class="number">100213</span>;jessionid=hdasdklkaj</span><br><span class="line"></span><br><span class="line">xxxxxx</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>get请求没有请求体，参数在请求头。<br>post不是一定要请求体。</p>
+<h6 id="响应："><a href="#响应：" class="headerlink" title="响应："></a>响应：</h6><ol>
+<li>响应行：</li>
+<li>响应头：</li>
+<li>空行：</li>
+<li>响应体：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 ok</span><br><span class="line">set-cookie:a=1;</span><br><span class="line">content-type:text/html;</span><br><span class="line">content-length:131563152</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    dskdlasd</span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/23/hello-world/" data-id="ck5bs8c8h0000qosy900nyk8x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/23/hello-world/" data-id="ck5bsk3te0001gosycdksyihk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -186,7 +195,7 @@
           </li>
         
           <li>
-            <a href="/2019/08/23/hello-world/">Hello World</a>
+            <a href="/2019/08/23/hello-world/">(no title)</a>
           </li>
         
       </ul>
