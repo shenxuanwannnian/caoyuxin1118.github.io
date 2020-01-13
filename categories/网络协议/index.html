@@ -7,21 +7,20 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>曹宇新的第一篇文章 - Cyyxxx</title>
+<title>分类: 网络协议 - Cyyxxx</title>
 
 
-    <meta name="description" content="曹宇新我是一个">
-<meta property="og:type" content="article">
-<meta property="og:title" content="曹宇新的第一篇文章">
-<meta property="og:url" content="http://yoursite.com/2019/08/24/曹宇新的y第一篇文章/index.html">
+    <meta name="description" content="CUUCUVVNNVNVNV">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cyyxxx">
+<meta property="og:url" content="http://yoursite.com/categories/网络协议/index.html">
 <meta property="og:site_name" content="Cyyxxx">
-<meta property="og:description" content="曹宇新我是一个">
+<meta property="og:description" content="CUUCUVVNNVNVNV">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-13T07:59:24.474Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="曹宇新的第一篇文章">
-<meta name="twitter:description" content="曹宇新我是一个">
+<meta name="twitter:title" content="Cyyxxx">
+<meta name="twitter:description" content="CUUCUVVNNVNVNV">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -80,7 +79,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="曹宇新的第一篇文章" height="28">
+                <img src="/images/logo.svg" alt="Cyyxxx" height="28">
             
             </a>
         </div>
@@ -129,7 +128,19 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/categories">分类</a></li>
+            
+            <li class="is-active"><a href="#" aria-current="page">网络协议</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    
 <div class="card">
     
     <div class="card-content article ">
@@ -139,14 +150,14 @@
                 <time class="level-item has-text-grey" datetime="2019-08-24T08:44:33.000Z">2019-08-24</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/web前端/">web前端</a>
+                <a class="has-link-grey -link" href="/categories/网络协议/">网络协议</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 7 个字)
+                    4 分钟 读完 (大约 549 个字)
                 </span>
                 
                 
@@ -155,11 +166,44 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                曹宇新的第一篇文章
+                <a class="has-link-black-ter" href="/2019/08/24/hello-world/">曹宇新的第一篇文章</a>
             
         </h1>
         <div class="content">
-            <h1 id="曹宇新"><a href="#曹宇新" class="headerlink" title="曹宇新"></a>曹宇新</h1><p>我是一个</p>
+            <h2 id="通信"><a href="#通信" class="headerlink" title="通信"></a>通信</h2><hr>
+<p>三要素：实体，连通，协议。</p>
+<p>分类</p>
+<ol>
+<li>单工通信，双工通信（半双工，全双工）</li>
+<li>单播，多播，广播（可以通知到局域网内的所有主机），主播、</li>
+</ol>
+<h4 id="通信的规范格式就是协议："><a href="#通信的规范格式就是协议：" class="headerlink" title="通信的规范格式就是协议："></a>通信的规范格式就是协议：</h4><p>OSI：七层<br>TCP/IP:五层-&gt;四层：<br>应用层&lt;- ：SSH：22 、HTTP：80 、HTTPS：443 、FTP：21<br>传输层&lt;- ：TCP-UDP<br>网络层&lt;- ：IP<br>数据链路</p>
+<h5 id="传输层："><a href="#传输层：" class="headerlink" title="传输层："></a>传输层：</h5><p>TCP：安全可靠，相应的传输效率较低，建立了两条管道实现数据传输且实现了全双工。</p>
+<ol>
+<li><p>三次握手（建立连接）：客户端发出请求，服务端回应，客户端确认；</p>
+</li>
+<li><p>四次挥手（断开连接）：（1）客户端发送结束请求，关闭由客户端到服务器的数据传输（但是还接受服务器向客户端发送的数据）；<br>（2）服务器收到确认请求，发送确认收到请求消息；<br>（3）服务器确认数据传输完成，向客户端发送完成的响应；<br>（4）客户端收到关闭连接响应，再发送确认。服务器没有收到消息客户端重传。服务器收到确认之后即断开连接，客户端等待后没有收到恢复，也断开连接。</p>
+<p>UDP：特点相反，非面向连接，但也建立了全双工。在传输的过程中不会保证传输数据的顺序与完整性。应用场景：视频聊天。</p>
+<h5 id="应用层："><a href="#应用层：" class="headerlink" title="应用层："></a>应用层：</h5><p>HTTP:（底层协议HTTP为全双工，但是只可以实现半双工，因为需要根据请求进行响应）</p>
+<h6 id="请求："><a href="#请求：" class="headerlink" title="请求："></a>请求：</h6><ol>
+<li>请求行：</li>
+<li>请求头：</li>
+<li>空行：</li>
+<li>请求体：</li>
+</ol>
+</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GET /a.html HTTP/<span class="number">1.1</span></span><br><span class="line">content-type:application/json</span><br><span class="line">cokkie:uid=<span class="number">100213</span>;jessionid=hdasdklkaj</span><br><span class="line"></span><br><span class="line">xxxxxx</span><br></pre></td></tr></table></figure>
+
+<p>get请求没有请求体，参数在请求头。<br>post不是一定要请求体。</p>
+<h6 id="响应："><a href="#响应：" class="headerlink" title="响应："></a>响应：</h6><ol>
+<li>响应行：</li>
+<li>响应头：</li>
+<li>空行：</li>
+<li>响应体：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 ok</span><br><span class="line">set-cookie:a=1;</span><br><span class="line">content-type:text/html;</span><br><span class="line">content-length:131563152</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    dskdlasd</span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
 
         </div>
         
@@ -170,55 +214,9 @@
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
-
-<div class="notification is-danger">
-    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-                
-<div class="notification is-danger">
-    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
-</div>
-
-                
-        </div>
-    </div>
-</div>
 
 
 
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/08/24/hello-world/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">曹宇新的第一篇文章</span>
-            </a>
-        </div>
-        
-        
-    </div>
-</div>
 
 
 </div>
@@ -620,7 +618,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="曹宇新的第一篇文章" height="28">
+                    <img src="/images/logo.svg" alt="Cyyxxx" height="28">
                 
                 </a>
                 <p class="is-size-7">
