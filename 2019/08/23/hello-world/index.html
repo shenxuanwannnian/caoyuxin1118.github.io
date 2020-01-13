@@ -19,7 +19,7 @@
 <meta property="og:description" content="通信 三要素：实体，连通，协议。 分类  单工通信，双工通信（半双工，全双工） 单播，多播，广播（可以通知到局域网内的所有主机），主播、  通信的规范格式就是协议：OSI：七层TCP/IP:五层-&amp;gt;四层：应用层&amp;lt;- ：SSH：22 、HTTP：80 、HTTPS：443 、FTP：21传输层&amp;lt;- ：TCP-UDP网络层&amp;lt;- ：IP数据链路 传输层：TCP：安全可靠，相应的传">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-13T08:34:34.086Z">
+<meta property="og:updated_time" content="2020-01-13T08:41:35.178Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网络协议（1）">
 <meta name="twitter:description" content="通信 三要素：实体，连通，协议。 分类  单工通信，双工通信（半双工，全双工） 单播，多播，广播（可以通知到局域网内的所有主机），主播、  通信的规范格式就是协议：OSI：七层TCP/IP:五层-&amp;gt;四层：应用层&amp;lt;- ：SSH：22 、HTTP：80 、HTTPS：443 、FTP：21传输层&amp;lt;- ：TCP-UDP网络层&amp;lt;- ：IP数据链路 传输层：TCP：安全可靠，相应的传">
@@ -174,7 +174,7 @@
 </li>
 <li><p>四次挥手（断开连接）：（1）客户端发送结束请求，关闭由客户端到服务器的数据传输（但是还接受服务器向客户端发送的数据）；<br>（2）服务器收到确认请求，发送确认收到请求消息；<br>（3）服务器确认数据传输完成，向客户端发送完成的响应；<br>（4）客户端收到关闭连接响应，再发送确认。服务器没有收到消息客户端重传。服务器收到确认之后即断开连接，客户端等待后没有收到恢复，也断开连接。</p>
 <p>UDP：特点相反，非面向连接，但也建立了全双工。在传输的过程中不会保证传输数据的顺序与完整性。应用场景：视频聊天。</p>
-<h5 id="应用层："><a href="#应用层：" class="headerlink" title="应用层："></a>应用层：</h5><p>HTTP:（底层协议HTTP为全双工，但是只可以实现半双工，因为需要根据请求进行响应）</p>
+<h5 id="应用层："><a href="#应用层：" class="headerlink" title="应用层："></a>应用层：</h5><p>HTTP:（底层协议TCP为全双工，但是只可以实现半双工，因为需要根据请求进行响应）</p>
 <h6 id="请求："><a href="#请求：" class="headerlink" title="请求："></a>请求：</h6><ol>
 <li>请求行：</li>
 <li>请求头：</li>
@@ -258,7 +258,7 @@
         <div class="level-start">
             <a class="level level-item has-link-grey  article-nav-prev" href="/2019/08/24/曹宇新的y第一篇文章/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">曹宇新的第一篇文章</span>
+                <span class="level-item">Frank的第一篇文章</span>
             </a>
         </div>
         
@@ -428,17 +428,17 @@
             </h3>
             <ul class="menu-list">
             <li>
-        <a class="level is-marginless" href="/categories/web前端/">
+        <a class="level is-marginless" href="/categories/网络协议/">
             <span class="level-start">
-                <span class="level-item">web前端</span>
+                <span class="level-item">网络协议</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
-        <a class="level is-marginless" href="/categories/网络协议/">
+        <a class="level is-marginless" href="/categories/随笔/">
             <span class="level-start">
-                <span class="level-item">网络协议</span>
+                <span class="level-item">随笔</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
@@ -471,16 +471,16 @@
             
             <a href="/2019/08/24/曹宇新的y第一篇文章/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="曹宇新的第一篇文章">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Frank的第一篇文章">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T08:44:33.000Z">2019-08-24</time></div>
-                    <a href="/2019/08/24/曹宇新的y第一篇文章/" class="title has-link-black-ter is-size-6 has-text-weight-normal">曹宇新的第一篇文章</a>
+                    <a href="/2019/08/24/曹宇新的y第一篇文章/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Frank的第一篇文章</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/web前端/">web前端</a>
+                        <a class="has-link-grey -link" href="/categories/随笔/">随笔</a>
                     </p>
                 </div>
             </div>
@@ -580,16 +580,16 @@
             
             <a href="/2019/08/24/曹宇新的y第一篇文章/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="曹宇新的第一篇文章">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Frank的第一篇文章">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-24T08:44:33.000Z">2019-08-24</time></div>
-                    <a href="/2019/08/24/曹宇新的y第一篇文章/" class="title has-link-black-ter is-size-6 has-text-weight-normal">曹宇新的第一篇文章</a>
+                    <a href="/2019/08/24/曹宇新的y第一篇文章/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Frank的第一篇文章</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/web前端/">web前端</a>
+                        <a class="has-link-grey -link" href="/categories/随笔/">随笔</a>
                     </p>
                 </div>
             </div>
