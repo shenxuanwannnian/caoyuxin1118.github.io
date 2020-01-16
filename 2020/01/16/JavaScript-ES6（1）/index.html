@@ -10,19 +10,19 @@
 <title>JavaScript-ES6（1） - Cyyxxx</title>
 
 
-    <meta name="description" content="ES6  let命令模块内部不允许用let命令重复声明，存在暂时性死区，不允许变量提升（函数声明和变量声明总是被JavaScript解释器隐式地提升(hoist)到包含他们的作用域的最顶端。)通过创建，初始化，赋值（将声明拆分为三个部分）来对var和let进行区分：对于var来说，在将变量进行赋值之前就已将变量创建并初始化为            undefined，对于let来说，在执行赋值语句">
-<meta name="keywords" content="ES6,JavaScript">
+    <meta name="description" content="ES6  let命令模块内部不允许用let命令重复声明，存在暂时性死区，不允许变量提升（函数声明和变量声明总是被JavaScript解释器隐式地提升(hoist)到包含他们的作用域的最顶端。)通过创建，初始化，赋值（将声明拆分为三个部分）来对var和let进行区分：">
+<meta name="keywords" content="JavaScript,ES6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript-ES6（1）">
 <meta property="og:url" content="http://yoursite.com/2020/01/16/JavaScript-ES6（1）/index.html">
 <meta property="og:site_name" content="Cyyxxx">
-<meta property="og:description" content="ES6  let命令模块内部不允许用let命令重复声明，存在暂时性死区，不允许变量提升（函数声明和变量声明总是被JavaScript解释器隐式地提升(hoist)到包含他们的作用域的最顶端。)通过创建，初始化，赋值（将声明拆分为三个部分）来对var和let进行区分：对于var来说，在将变量进行赋值之前就已将变量创建并初始化为            undefined，对于let来说，在执行赋值语句">
+<meta property="og:description" content="ES6  let命令模块内部不允许用let命令重复声明，存在暂时性死区，不允许变量提升（函数声明和变量声明总是被JavaScript解释器隐式地提升(hoist)到包含他们的作用域的最顶端。)通过创建，初始化，赋值（将声明拆分为三个部分）来对var和let进行区分：">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-16T03:57:51.014Z">
+<meta property="og:updated_time" content="2020-01-16T07:08:54.207Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript-ES6（1）">
-<meta name="twitter:description" content="ES6  let命令模块内部不允许用let命令重复声明，存在暂时性死区，不允许变量提升（函数声明和变量声明总是被JavaScript解释器隐式地提升(hoist)到包含他们的作用域的最顶端。)通过创建，初始化，赋值（将声明拆分为三个部分）来对var和let进行区分：对于var来说，在将变量进行赋值之前就已将变量创建并初始化为            undefined，对于let来说，在执行赋值语句">
+<meta name="twitter:description" content="ES6  let命令模块内部不允许用let命令重复声明，存在暂时性死区，不允许变量提升（函数声明和变量声明总是被JavaScript解释器隐式地提升(hoist)到包含他们的作用域的最顶端。)通过创建，初始化，赋值（将声明拆分为三个部分）来对var和let进行区分：">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    11 分钟 读完 (大约 1600 个字)
+                    11 分钟 读完 (大约 1601 个字)
                 </span>
                 
                 
@@ -162,7 +162,8 @@
         <div class="content">
             <h2 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h2><hr>
 <ol>
-<li>let命令<br>模块内部不允许用<code>let</code>命令重复声明，存在暂时性死区，不允许变量提升（<strong>函数声明和变量声明总是被JavaScript解释器隐式地提升(hoist)到包含他们的作用域的最顶端。</strong>)<br>通过创建，初始化，赋值（将声明拆分为三个部分）来对var和let进行区分：<br>对于var来说，在将变量进行赋值之前就已将变量创建并初始化为            undefined，对于let来说，在执行赋值语句之前只进行了创建，在执行语句    的时候会同时进行初始化和赋值，<strong>暂时性死区的本质就是不能使用没有初    始化的变量。</strong><br>
+<li>let命令<br>模块内部不允许用<code>let</code>命令重复声明，存在暂时性死区，不允许变量提升（<strong>函数声明和变量声明总是被JavaScript解释器隐式地提升(hoist)到包含他们的作用域的最顶端。</strong>)<br>通过创建，初始化，赋值（将声明拆分为三个部分）来对var和let进行区分：<a id="more"></a> 
+对于var来说，在将变量进行赋值之前就已将变量创建并初始化为            undefined，对于let来说，在执行赋值语句之前只进行了创建，在执行语句    的时候会同时进行初始化和赋值，<strong>暂时性死区的本质就是不能使用没有初    始化的变量。</strong><br>
 
 
 </li>
